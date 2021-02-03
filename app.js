@@ -1,7 +1,7 @@
 const express = require('express');
-const pug = require('pug');
-const aboutRouter = require("./routes/about");
-//import data from ("./data.json");
+const data = require("./data.json");
+
+
 
 const app = express();
 //const pugApp = pug();
@@ -11,20 +11,44 @@ const app = express();
 app.set('view engine', 'pug');
 
 //route the static files
-app.use(express.static("public"));
-app.use('/about', aboutRouter)
+app.use("/static",express.static("public"));
+app.use("/static",express.static("images"));
+
 
 //setting routes 
 app.get("/", (req, res)=>{
-    res.render('layout');
+    res.locals.projects = data.projects ;
+    res.render('index');
 });
 app.get("/about", function (req, res){
-    res.send('GET request to the homepage');
+    res.render('about');
 });
 
-//app.get(`/projects/${id}`, function (req, res){
-//    res.send('GET request to the homepage');
-//});
+data.projects.forEach(project => {
+    app.get(`/projects/${project.id}`, (req, res) => {
+        res.render('project', {project})
+})
+}) ;
 
-app.listen(3000);
-//console.log("Node server running on port %d", app.address().port);
+const port = 3000;
+app.listen(port,()=>{
+    console.log(`Server running on port ${port}`) ;
+});
+
+app.use((req, res, next)=>{
+    const err = new Error();
+    err.status = 404;
+    err.message = "Page not found";
+    next(err);
+})
+
+app.use((err, req, res, next) => {
+    if (err.status === 404) {
+        res.status(404).render('pageNotFound', {err}) ;
+    } else {
+        err.message = 'There was an error !' ;
+        res.status(err.status).render('error', {err}) ;
+    }
+    console.log(err.status) ;
+    console.log(err.message)
+  });
