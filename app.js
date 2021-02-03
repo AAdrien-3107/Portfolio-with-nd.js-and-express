@@ -44,7 +44,7 @@ app.use((req, res, next)=>{
 
 app.use((err, req, res, next) => {
     if (err.status === 404) {
-        res.status(404).render('pageNotFound', {err}) ;
+        res.status(404).render('page-not-found', {err}) ;
     } else {
         err.message = 'There was an error !' ;
         res.status(err.status).render('error', {err}) ;
