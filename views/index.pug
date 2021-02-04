@@ -8,7 +8,7 @@ block content
     h1 Hey, Potential Employers
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p In this project I had to create a portfolio to showcase my previous project in my Tech degree. the purpose of this project is to get more knowledge of the backend and be able to connect all parts of the app together. 
+    p In this project,I had to create a portfolio to showcase my previous projects for my Tech degree. The purpose of this project is to work on the backend and the frontend and connect them. 
 
 
   article.portfolio-project-thumbs
@@ -24,6 +24,6 @@ block content
 
       .cell
           a(href=`/projects/${project.id}`)
-            img.thumbnail(src=`/static/${project.image_urls}`)
+            img.thumbnail(src=`/static/${project.image_urls[0]}`)
             h5= `${project.project_name}`
 

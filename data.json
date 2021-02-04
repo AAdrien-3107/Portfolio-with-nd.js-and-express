@@ -3,35 +3,43 @@
       "project_name":"Registration form",
       "description":"In this project a registration form has to be filled. at each input some indication will be shown live all the way until the registration button is completed. Here are some feature implemented to this project. User can not select multiple workshops occuring at the same date and time Total cost of workshops is being calculated when a workshop is (de)selected Credit card input is being validated for 13-16 numbers Email input is validating for a correct formatted email address Zip code and CVV number inputs are validated to be a certain amount of numbers Upon submitting the form each input provides an error when validation is failed impossible to submit the form untill all the inputs are correctly validated", 
       "technologies":["node","JavaScript","CSS","HTML" ],
-      "live-link":"unknown",
+      "live_link":"https://aadrien-3107.github.io/Registration-form/",
       "github_link":"https://github.com/AAdrien-3107/Registration-form",
-      "image_urls":"/images/registrationForm.png"
+      "image_urls":["/images/registrationForm.png","/images/registrationFormLarge1.png","/images/registrationFormLarge2.png"]
     }, 
 
     { "id":1,
         "project_name":"Game OPP",
         "description":"In this Project I tried to achieve a game using JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard. Using JavaScript, I have created two JavaScript classes with specific properties and methods. I created a Game class for managing the game, and a Phrase class to help with creating an array of Phrase objects.My code will choose a random phrase, split the phrase into letters, and put those letters onto the gameboard.Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. If the letter is in the phrase, the gameboard displays the chosen letters on the screen.A player continues to select letters until they guess the phrase (and win), or make five incorrect guesses (and lose).If the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears. A player can guess a letter only once. After they’ve guessed a letter, your programming will need to disable that letter on the onscreen keyboard.", 
         "technologies":["Object Oriented Programing","JavaScript","CSS","HTML" ],
-        "live-link":"unknown",
+        "live_link":"https://aadrien-3107.github.io/OOP-Game-App/",
         "github_link":"https://github.com/AAdrien-3107/OOP-Game-App",
-        "image_urls":"/images/gameOpp.png"
+        "image_urls":["/images/gameOpp.png","/images/gameOPPLarge1.png","/images/gameOPPLarge2.png","/images/gameOPPLarge3.png"]
     },  
 
     { "id":2,
         "project_name":"Public API",
         "description":"This project consiste of using an API which is in this case https://randomuser.me/. This could be use for a company for their employee to look through the other employee information. technical information on the webpage: will generate 12 employee per page with personal informations.by clicking the more info button, it will generate a modal where you will have more information. previous and next buttons will allow you to go throught the list of employee without having to click on each one of them.a search bar will allow you to speed up the process for looking a specific person.(Only employee with US alphabetic letter can be searched at the moment.) Please enjoy the experience and please let me know is you have more Idea.", 
         "technologies":["API request","JavaScript","CSS","HTML" ],
-        "live-link":"unknown",
+        "live_link":"https://aadrien-3107.github.io/public-API-request/",
         "github_link":"https://github.com/AAdrien-3107/public-API-request",
-        "image_urls":"/images/publicApi.png"
+        "image_urls":["/images/publicApi.png","/images/publicAPILarge1.png","/images/publicAPILarge2.png","/images/publicAPILarge3.png"]
     },  
 
     { "id":3,
         "project_name":"Data Pagination",
         "description":"This website show a list a student displayed by 9 student per page. The list is on a seperate javaScript file and the data is being accesed from another .js file. Everything is being implemented using javaScript vanilla.", 
         "technologies":["JavaScript","CSS","HTML" ],
-        "live-link":"unknown",
+        "live_link":"https://aadrien-3107.github.io/Data-Pagination-Filtering/",
         "github_link":"https://github.com/AAdrien-3107/Data-Pagination-Filtering",
-        "image_urls":"/images/dataPagination.png"
-    }   
+        "image_urls":["/images/dataPagination.png","/images/dataPaginationLarge1.png","/images/dataPaginationLarge2.png"]
+    },
+    { "id":4,
+      "project_name":"Random quote generator",
+      "description":"This is my first project using Javascript for my the tech degree path. In this project you will be able to click on a button that will generate quotes randomly. Together with the quotes you will find the author and the source but also if available the tag, the year or the citation. I hope you enjoy and if you have any input please feel free to let me know.", 
+      "technologies":["JavaScript","CSS","HTML" ],
+      "live_link":"https://aadrien-3107.github.io/Project01-tth/",
+      "github_link":"https://github.com/AAdrien-3107/Data-Pagination-Filtering",
+      "image_urls":["/images/project1P1.png","/images/project1Large.png"]
+  }      
 ]}  
