@@ -32,10 +32,12 @@ article {
   background: #3AAFA9;
 }
 h1{
-  font-family: 'Merriweather', serif;
+  
   color: #17252A;
+  font-size: 50rem;
+
 }
-h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5,p{
   font-family: 'Merriweather', serif;
 }
 
@@ -47,7 +49,7 @@ h5{
   color: #17252A;
   text-align: center;
 
-  margin: 0px 0px 50px;
+  margin: 0px 0px 80px;
 }
 
 h6{
@@ -81,7 +83,7 @@ a {
 }
 
 .grid {
-  display: grid;
+  display: inline-block;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 30px;
 }
@@ -108,6 +110,7 @@ a {
 .box li {
   font-size: 13px;
 }
+
 
 
 
@@ -298,6 +301,7 @@ nav a span {
 
 .skills-contact-box ul {
   margin-bottom: 35px;
+  
 }
 
 .project-img {
@@ -305,7 +309,7 @@ nav a span {
   max-width: 550px;
   margin-bottom: 15px;
   border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  box-shadow: 7px 5px 8px #17252A; 
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -315,13 +319,35 @@ nav a span {
 .btn-link {
   display: block;
   text-align: center;
-  color: #fefefe;
+  color: #17252A;
   width: 100%;
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
-  border: 1px solid transparent;
+  background-color: rgb(53, 47, 47);
+  border: 1px solid black;
+  box-shadow: 7px 5px 8px #17252A; 
+  border-radius: 5px;
+  
+}
+.project{
+  color:white;
+}
+.gitHub{
+  background-image: url("../images/github.png");
+  background-size: cover;
+}
+.linkedIn{
+  background-image: url("../images/linkedin.png");
+  background-size: cover;
+}
+
+.twitter{
+  background-image: url("../images/twitter.png");
+  background-size: cover;
+}
+a.email {
+  color: black;
 }
 
 
@@ -335,6 +361,8 @@ nav a span {
 
   .portfolio-intro h1 {
     font-size: 3rem;
+    margin-bottom: 30px;
+
   }
 
   .box {

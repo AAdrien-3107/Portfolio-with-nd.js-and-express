@@ -37,10 +37,10 @@ app.listen(port,()=>{
 
 app.use((req, res, next)=>{
     const err = new Error();
-    err.status = 404;
+    err.status = 500;
     err.message = "Page not found";
     next(err);
-})
+}) 
 
 app.use((err, req, res, next) => {
     if (err.status === 404) {

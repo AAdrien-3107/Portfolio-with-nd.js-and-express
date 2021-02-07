@@ -1,12 +1,5 @@
 {"projects":[    
-    { "id":0,
-      "project_name":"Registration form",
-      "description":"In this project a registration form has to be filled. at each input some indication will be shown live all the way until the registration button is completed. Here are some feature implemented to this project. User can not select multiple workshops occuring at the same date and time Total cost of workshops is being calculated when a workshop is (de)selected Credit card input is being validated for 13-16 numbers Email input is validating for a correct formatted email address Zip code and CVV number inputs are validated to be a certain amount of numbers Upon submitting the form each input provides an error when validation is failed impossible to submit the form untill all the inputs are correctly validated", 
-      "technologies":["node","JavaScript","CSS","HTML" ],
-      "live_link":"https://aadrien-3107.github.io/Registration-form/",
-      "github_link":"https://github.com/AAdrien-3107/Registration-form",
-      "image_urls":["/images/registrationForm.png","/images/registrationFormLarge1.png","/images/registrationFormLarge2.png"]
-    }, 
+    
 
     { "id":1,
         "project_name":"Game OPP",
@@ -24,6 +17,15 @@
         "live_link":"https://aadrien-3107.github.io/public-API-request/",
         "github_link":"https://github.com/AAdrien-3107/public-API-request",
         "image_urls":["/images/publicApi.png","/images/publicAPILarge1.png","/images/publicAPILarge2.png","/images/publicAPILarge3.png"]
+    }, 
+    
+    { "id":0,
+      "project_name":"Registration form",
+      "description":"In this project a registration form has to be filled. at each input some indication will be shown live all the way until the registration button is completed. Here are some feature implemented to this project. User can not select multiple workshops occuring at the same date and time Total cost of workshops is being calculated when a workshop is (de)selected Credit card input is being validated for 13-16 numbers Email input is validating for a correct formatted email address Zip code and CVV number inputs are validated to be a certain amount of numbers Upon submitting the form each input provides an error when validation is failed impossible to submit the form untill all the inputs are correctly validated", 
+      "technologies":["node","JavaScript","CSS","HTML" ],
+      "live_link":"https://aadrien-3107.github.io/Registration-form/",
+      "github_link":"https://github.com/AAdrien-3107/Registration-form",
+      "image_urls":["/images/registrationForm.png","/images/registrationFormLarge1.png","/images/registrationFormLarge2.png"]
     },  
 
     { "id":3,
